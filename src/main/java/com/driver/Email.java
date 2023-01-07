@@ -40,18 +40,18 @@ public class Email {
         }
     }
 
-    private Boolean isValid(String password){
+    private Boolean isValid(String Password){
         Boolean capitalLetter = false;
         Boolean smallLetter = false;
         Boolean digit = false;
         Boolean specialCharacter = false;
 
-        if(password.length() < 8){
+        if(Password.length() < 8){
             return false;
         }
 
-        for(int i = 0; i<password.length(); i++){
-            char ch = password.charAt(i);
+        for(int i = 0; i<Password.length(); i++){
+            char ch = Password.charAt(i);
             if((ch >= 'A') && (ch <= 'Z')){
                 capitalLetter = true;
             }
